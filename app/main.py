@@ -15,6 +15,7 @@ def create_person_list(people: list) -> list:
         if person.get("wife"):
             setattr(person_instance, "wife", person_instances[person["wife"]])
         if person.get("husband"):
-            setattr(person_instance, "husband", person_instances[person["husband"]])
+            setattr(person_instance, "husband",
+                    person_instances[person["husband"]])
 
     return list(person_instances.values())
